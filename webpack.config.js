@@ -14,7 +14,7 @@ module.exports = {
     
     // Entry file to start building from.
     entry: {
-        main: "./main.js"
+        main: "./app/main.js"
     },
     
     // Location and filename pattern of the
