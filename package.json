@@ -1,27 +1,30 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "electron-react-webpack-quick-start",
+  "version": "0.0.1",
+  "description": "A minimal Electron application with React and Webpack",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "dev": "webpack && electron build/main.bundle.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/jogleasonjr/electron-quick-start.git"
   },
   "keywords": [
     "Electron",
     "quick",
     "start",
-    "tutorial"
+    "tutorial",
+    "react",
+    "webpack"
   ],
-  "author": "GitHub",
+  "author": "John Gleason",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
+    "url": "https://github.com/jogleasonjr/electron-quick-start/issues"
   },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "homepage": "https://github.com/jogleasonjr/electron-quick-start#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.36.0",
     "webpack": "^1.12.13",
