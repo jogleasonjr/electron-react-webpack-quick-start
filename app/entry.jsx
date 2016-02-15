@@ -1,9 +1,10 @@
 'use strict'
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Headline from './components/Headline'
 
 ReactDOM.render(
-  <b>React</b>,
+  <Headline />,
   document.getElementById('react-root')
 );
