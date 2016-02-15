@@ -2,6 +2,8 @@
 
 A minimal, cross-platform Electron application with React and Webpack. Set breakpoints and debug the main process with [Visual Studio Code](https://code.visualstudio.com/).
 
+![Image](https://github.com/jogleasonjr/electron-react-webpack-quick-start/blob/master/images/hello_world.png)
+
 **Clone and run for a quick way to see an Electron and React in action.**
 
 ## To Use
