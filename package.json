@@ -4,7 +4,7 @@
   "description": "A minimal Electron application with React and Webpack",
   "main": "main.js",
   "scripts": {
-    "start": "electron app/main.js",
+    "start": "webpack && electron app/main.js",
     "dev": "webpack && electron app/main.js"
   },
   "repository": {

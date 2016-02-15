@@ -16,7 +16,7 @@ cd electron-react-webpack-quick-start
 # Install Webpack globally
 npm install -g webpack
 # Install dependencies and run the app
-npm install && npm run dev
+npm install && npm start
 ```
 
 Once you've bundled the application, you can Debug it by pressing `F5` or the Launch button in the Debug pane.
