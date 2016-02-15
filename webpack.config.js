@@ -14,14 +14,25 @@ module.exports = {
     
     // Entry file to start building from.
     entry: {
-        main: "./app/main.js"
+        main: "./app/entry.jsx"
     },
     
     // Location and filename pattern of the
     // final build output files.
     output: {
         path: path.join(__dirname, 'build'),
-        filename: "[name].bundle.js"
+        filename: "main.bundle.js"
+    },
+
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            loader: 'babel',
+            query: {
+                presets: ['react', 'es2015']
+            }
+        }]
     },
     
     // Defines where we can load modules from,

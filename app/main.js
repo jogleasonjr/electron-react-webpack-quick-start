@@ -5,6 +5,9 @@ const electron = require('electron');
 const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
+// Modules for React.js
+const React = require('react');
+const ReactDOM = require('react-dom');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -21,6 +24,7 @@ function createWindow() {
     // things working both in regular electron usage AND webpack,
     // we have to go with process.cwd() instead of __dirname.
     mainWindow.loadURL('file://' + process.cwd() + '/app/public/index.html');
+    
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
