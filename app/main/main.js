@@ -1,5 +1,3 @@
-'use strict';
-
 import electron from 'electron';
 
 // Module to control application life.

@@ -28,14 +28,28 @@ module.exports = {
     },
 
     module: {
+        
+        // Performs linting on code for quality checks
+        preLoaders: [
+            {
+                test: /(\.js$|\.jsx$)/,
+                include: path.resolve(__dirname, "app"),
+                loader: "eslint-loader"
+            }
+        ],
+        
+        // Performs transformations
         loaders: [{
             test: /\.jsx?$/,
-            exclude: /node_modules/,
+            include: path.resolve(__dirname, "app"),
             loader: 'babel',
             query: {
                 presets: ['react', 'es2015']
             }
         }]
+    },
+    eslint: {
+        configFile: '.eslintrc'
     },
     
     // Defines where we can load modules from,
