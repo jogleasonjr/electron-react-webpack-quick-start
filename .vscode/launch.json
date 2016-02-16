@@ -5,28 +5,28 @@
             "name": "Launch OSX",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/app/main.js",
+            "program": "${workspaceRoot}/build/main.bundle.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
             "runtimeExecutable": "${workspaceRoot}/node_modules/electron-prebuilt/dist/Electron.app/Contents/MacOS/Electron",
             "runtimeArgs": [],
             "env": {},
-            "sourceMaps": false,
+            "sourceMaps": true,
             "outDir": null
         },
         {
             "name": "Launch Windows",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/app/main.js",
+            "program": "${workspaceRoot}/build/main.bundle.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
             "runtimeExecutable": "${workspaceRoot}/node_modules/electron-prebuilt/dist/electron.exe",
             "runtimeArgs": [],
             "env": {},
-            "sourceMaps": false,
+            "sourceMaps": true,
             "outDir": null
         }
     ]

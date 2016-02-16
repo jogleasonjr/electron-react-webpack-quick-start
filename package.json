@@ -1,11 +1,11 @@
 {
   "name": "electron-react-webpack-quick-start",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimal Electron application with React and Webpack",
   "main": "main.js",
   "scripts": {
-    "start": "webpack && electron app/main.js",
-    "dev": "webpack && electron app/main.js"
+    "dev": "electron build/main.bundle.js",
+    "build": "echo 'Building...' && webpack"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,8 @@
     "quick",
     "start",
     "tutorial",
+    "es6",
+    "es2015",
     "react",
     "webpack"
   ],

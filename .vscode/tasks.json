@@ -2,5 +2,5 @@
 	"version": "0.1.0",
 	"command": "npm",
 	"isShellCommand": true,
-	"args": [ "start" ]
+	"args": [ "run", "build" ]
 }
