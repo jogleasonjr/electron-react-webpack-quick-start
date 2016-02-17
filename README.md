@@ -34,6 +34,7 @@ In [Visual Studio Code](https://code.visualstudio.com/), pressing `Ctrl-Shift-B`
 
 ![Image](https://github.com/jogleasonjr/electron-react-webpack-quick-start/blob/master/images/vscode_debugger.png)
 
+## Next Steps
 
 Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
 
