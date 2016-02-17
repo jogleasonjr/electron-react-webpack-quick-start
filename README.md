@@ -41,4 +41,4 @@ Learn more about React and JSX components [here](https://facebook.github.io/reac
 
 ## License
 
-[CC0 (Public Domain)](LICENSE.md)
+[MIT](https://tldrlegal.com/license/mit-license)
