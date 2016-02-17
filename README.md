@@ -6,7 +6,7 @@ A minimal, cross-platform Electron application with [React](https://facebook.git
 
 **Clone and run for a quick way to see an Electron and React in action.**
 
-## To Use
+## To Build and Run via CLI
 
 ```bash
 # Clone this repository
@@ -16,10 +16,21 @@ cd electron-react-webpack-quick-start
 # Install Webpack globally
 npm install -g webpack
 # Install dependencies and run the app
-npm install && npm start
+npm install && npm run dev
 ```
 
-Once you've bundled the application, you can Debug it by pressing `F5` or the Launch button in the Debug pane.
+To watch for local changes and trigger [automatic refresh](https://webpack.github.io/docs/webpack-dev-server.html#automatic-refresh), run these two commands in separate console windows:
+
+```bash
+# Run in console window 1
+npm run watch
+# Run in console window 2
+npm run dev
+```
+
+## To Build and Run in Visual Studio Code
+
+In [Visual Studio Code](https://code.visualstudio.com/), pressing `Ctrl-Shift-B` (Windows) or `Cmd-Shift-B` (OSX) will build and bundle the application, and pressing `F5` will debug the application. Make sure you have the proper OS selection in the VS Code's [Debug View](https://code.visualstudio.com/Docs/editor/debugging).
 
 ![Image](https://github.com/jogleasonjr/electron-react-webpack-quick-start/blob/master/images/vscode_debugger.png)
 
