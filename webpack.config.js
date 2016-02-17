@@ -1,4 +1,5 @@
 const path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
     
@@ -16,8 +17,8 @@ module.exports = {
     // Electron will be pointed at the main bundle,
     // while the Renderer will point to entry bundle.
     entry: {
-        entry: "./app/renderer/entry.jsx",
-        main: "./app/main/main.js"
+        entry: './app/renderer/entry.jsx',
+        main: './app/main/main.js'
     },
     
     // Location and filename pattern of the
@@ -26,6 +27,13 @@ module.exports = {
         path: path.join(__dirname, 'build'),
         filename: "[name].bundle.js"
     },
+
+    devServer: {
+        //content from here will be automatically served
+        contentBase: './app/renderer/public',
+        publicPath: 'http://localhost:8182/build/'
+    },
+
 
     module: {
         
@@ -62,5 +70,9 @@ module.exports = {
     resolve: {
         modulesDirectories: ['node_modules'],
         extensions: ['', '.js', '.jsx']
-    }
+    },
+
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 }

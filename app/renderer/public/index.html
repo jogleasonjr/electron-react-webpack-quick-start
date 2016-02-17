@@ -5,12 +5,20 @@
     <title>Hello World ❤ Electron, React, & Webpack</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1>Hello World <img src="images/GitHub-Mark-32px.png" /></h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     Electron <script>document.write(process.versions.electron)</script>,
     and <span id="react-root"></span>!
   </body>
-  <script src="./../../../build/entry.bundle.js">
-  </script>
+  
+  <!--Static bundle from running `webpack`. Doesn't change after bundling.-->
+  <script src="./../../../build/entry.bundle.js"></script>
+  
+  <!--"Live" bundle that's served from webpack-dev-server. `npm run watch` should be running as an external process-->
+  <script src="http://localhost:8182/build/entry.bundle.js"></script>
+  
+  <!--A static script from webpack-dev-server that allows for hot reloading of the above bundle-->
+  <script src="http://localhost:8182/webpack-dev-server.js"></script>
+  
 </html>
