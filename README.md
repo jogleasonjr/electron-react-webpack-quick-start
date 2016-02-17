@@ -4,8 +4,6 @@ A minimal, cross-platform Electron application with [React](https://facebook.git
 
 ![Image](https://github.com/jogleasonjr/electron-react-webpack-quick-start/blob/master/images/hello_world.png)
 
-**Clone and run for a quick way to see an Electron and React in action.**
-
 ## To Build and Run via CLI
 
 ```bash
@@ -18,6 +16,8 @@ npm install -g webpack
 # Install dependencies and run the app
 npm install && npm run dev
 ```
+
+### Hot Reloading
 
 To watch for local changes and trigger [automatic refresh](https://webpack.github.io/docs/webpack-dev-server.html#automatic-refresh), run these two commands in separate console windows:
 
@@ -37,4 +37,8 @@ In [Visual Studio Code](https://code.visualstudio.com/), pressing `Ctrl-Shift-B`
 
 Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
 
-#### License [CC0 (Public Domain)](LICENSE.md)
+Learn more about React and JSX components [here](https://facebook.github.io/react/docs/getting-started.html).
+
+## License
+
+[CC0 (Public Domain)](LICENSE.md)
