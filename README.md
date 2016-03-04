@@ -11,8 +11,6 @@ A minimal, cross-platform Electron application with [React](https://facebook.git
 git clone https://github.com/jogleasonjr/electron-react-webpack-quick-start
 # Go into the repository
 cd electron-react-webpack-quick-start
-# Install Webpack globally
-npm install -g webpack
 # Install dependencies and run the app
 npm install && npm run dev
 ```
