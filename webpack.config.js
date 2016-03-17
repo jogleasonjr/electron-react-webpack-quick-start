@@ -1,5 +1,5 @@
 const path = require('path');
-var webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
     
@@ -36,26 +36,36 @@ module.exports = {
 
 
     module: {
-        
-        // Performs linting on code for quality checks
         preLoaders: [
+            // Performs linting on code for quality checks
             {
                 test: /(\.js$|\.jsx$)/,
                 include: path.resolve(__dirname, "app"),
-                loader: "eslint-loader"
+                loader: "eslint"
             }
         ],
-        
-        // Performs transformations
-        loaders: [{
-            test: /\.jsx?$/,
-            include: path.resolve(__dirname, "app"),
-            loader: 'babel',
-            query: {
-                presets: ['react', 'es2015']
-            }
-        }]
+        loaders: [
+            {
+                // Post-css loader and its plugins.
+                test: /\.scss$/,
+                include: path.resolve(__dirname, "app/renderer/styles"),
+                loaders: [
+                    'style',// inserts raw css into styles elements.
+                    'css', // css-loader parses css files resolves url() expressions.
+                    'sass' // sass-loader for sass compilation
+                ]
+            },
+            {
+                // Babel loader configuration. Performs the JSX and ES6 to JS transformations.
+                test: /\.jsx?$/,
+                include: path.resolve(__dirname, "app"),
+                loader: 'babel',
+                query: {
+                    presets: ['react', 'es2015']
+                }
+            }]
     },
+
     eslint: {
         configFile: '.eslintrc'
     },

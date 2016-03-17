@@ -2,9 +2,9 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import Headline from './components/Headline';
+import Main from './components/Main';
 
 ReactDOM.render(
-  <Headline />,
+  <Main />,
   document.getElementById('react-root')
 );

@@ -1,6 +1,6 @@
 # electron-react-webpack-quick-start
 
-A minimal, cross-platform Electron application with [React](https://facebook.github.io/react/) for views and [Webpack](https://webpack.github.io/). Set breakpoints and debug the main process with [Visual Studio Code](https://code.visualstudio.com/). ES6/ES2015 support using [Babel](https://babeljs.io/).
+A minimal, cross-platform Electron application with [React](https://facebook.github.io/react/) for views and [Webpack](https://webpack.github.io/). Set breakpoints and debug the main process with [Visual Studio Code](https://code.visualstudio.com/). ES6/ES2015 support using [Babel](https://babeljs.io/). 
 
 ![Image](https://github.com/jogleasonjr/electron-react-webpack-quick-start/blob/master/images/hello_world.png)
 
