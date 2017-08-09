@@ -13,7 +13,7 @@
             "runtimeArgs": [],
             "env": {},
             "sourceMaps": true,
-            "outDir": null
+            "protocol": "legacy"
         },
         {
             "name": "Launch Windows",
@@ -27,7 +27,7 @@
             "runtimeArgs": [],
             "env": {},
             "sourceMaps": true,
-            "outDir": null
+            "protocol": "legacy"
         }
     ]
 }
